@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style_portfolio.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script type="text/javascript" src="gallery.js"></script> -->
+
+  </head>
+  <body>
+
+    <div class="sidenav">
+
+      <div class="pagetitle">
+        <p>ALYS SHAH</p>
+      </div>
+
+      <br><br>
+
+      <a href="index.html">
+        <p class="link">HOME</p>
+      </a>
+
+      <a href="bio.html">
+        <p class="link">ABOUT ME</p>
+        <p class="desc">Bio & Resume</p>
+      </a>
+
+      <a href="portfolio.html"  style="background-color: #1d2029ff">
+        <p class="link">PORTFOLIO</p>
+        <p class="desc">Take a look at some of my work!</p>
+      </a>
+
+    </div>
+
+    <!-- Page content -->
+    <div class="main">
+
+
+      <h1>PORTFOLIO</h1>
+      <br>
+      <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_portfolio_gallery_filter -->
+
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> View all art</button>
+        <button class="btn" onclick="filterSelection('sketch')"> Sketches</button>
+        <button class="btn" onclick="filterSelection('digital')"> Digital Art</button>
+        <button class="btn" onclick="filterSelection('pyro')"> Pyrography</button>
+      </div>
+
+      <br>
+
+      <div class="row">
+
+        <!-- <div class="column pyro">
+          <div class="container">
+            <img src="art/pyro_bookmark.png" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">sample</p>
+                <p class="date">sample</p>
+                <p class="description">sample</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="column pyro">
+          <div class="container">
+            <img src="art/pyro_bird.png" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Crow</p>
+                <p class="date">2021</p>
+                <p class="description">My second attempt at pyrography</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column pyro">
+          <div class="container">
+            <img src="art/pyro_mushrooms.png" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Mushrooms</p>
+                <p class="date">2020</p>
+                <p class="description">Very first attempt at pyrography</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column digital">
+          <div class="container">
+            <img src="art/wte_1.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">sample</p>
+                <p class="date">09/12/20</p>
+                <p class="description">sample</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column digital">
+          <div class="container">
+            <img src="art/wte_2.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">sample</p>
+                <p class="date">09/12/20</p>
+                <p class="description">sample</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column sketch">
+          <div class="container">
+            <img src="art/sketch10.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Sketch #10</p>
+                <p class="date">2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column sketch">
+          <div class="container">
+            <img src="art/aw.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">AW.</p>
+                <p class="date">2019</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column digital">
+          <div class="container">
+            <img src="art/eye.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Eye</p>
+                <p class="date">23/11/18</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column digital">
+          <div class="container">
+            <img src="art/butterfly.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Butterfly</p>
+                <p class="date">sample</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column sketch">
+          <div class="container">
+            <img src="art/sketch1.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Sketch #1</p>
+                <p class="date">2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column sketch">
+          <div class="container">
+            <img src="art/sketch2.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Sketch #2</p>
+                <p class="date">2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column digital">
+          <div class="container">
+            <img src="art/city.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">City</p>
+                <p class="date">24/12/18</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column digital">
+          <div class="container">
+            <img src="art/stayaway.JPG" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Stay Away</p>
+                <p class="date">sample</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column digital">
+          <div class="container">
+            <img src="art/portfolio_face.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Whisper</p>
+                <p class="date">15/11/18</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column digital">
+          <div class="container">
+            <img src="art/yellow_glasses.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Yellow Glasses</p>
+                <p class="date">25/11/18</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column digital">
+          <div class="container">
+            <img src="art/Heart_of_Darkness.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Heart of Darkness</p>
+                <p class="date">2019</p>
+                <p class="description">This project was a high school assignment inspired by the novel Heart of Darkness by Joseph Conrad. I focused on two main recurrent themes from the book: the idea of futility and that of nature versus man/civilization. </p>
+                <!-- For the first first, I was inspired by the dutch genre of still life painting from the 17th century named “vanitas” used to illustrate the impermanence and brevity of life and symbolizing death’s inevitability. Some symbols used were skulls, blown out candles, rotten fruit, and hourglasses. This inspired me to reuse the symbol of a skull. The second theme is depicted through the ivy surrounding the skull as a way to link back to the idea of nature reclaiming what once belonged to it and covering up everything left behind by humans. Furthermore, ivy represents eternity and reinforces the idea of nature’s everlasting presence. -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column sketch">
+          <div class="container">
+            <img src="art/sketch3.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Sketch #3</p>
+                <p class="date">2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column digital">
+          <div class="container">
+            <img src="art/Redskins(71).jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Trent Williams #71</p>
+                <p class="date">2018</p>
+                <p class="description">Artwork created during an internship with The Washington Football Team's graphic design team, where I was asked to make art of one of their marquee players (Trent Williams, #71)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column digital">
+          <div class="container">
+            <img src="art/portfolio_horse.png" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Horse</p>
+                <p class="date">sample</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column digital">
+          <div class="container">
+            <img src="art/TheTempest(beforethestorm).jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">The Tempest (before the storm)</p>
+                <p class="date">2020</p>
+                <p class="description">(Part 1) Made for a high school assignment based on the Shakespeare's The Tempest</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column digital">
+          <div class="container">
+            <img src="art/TheTempest(duringthestorm).jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">The Tempest (during the storm)</p>
+                <p class="date">2020</p>
+                <p class="description">(Part 2) Made for a high school assignment based on the Shakespeare's The Tempest</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column digital">
+          <div class="container">
+            <img src="art/diversity.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Diversity</p>
+                <p class="date">March 2019</p>
+                <p class="description">Art presented in my high school’s yearbook after the yearbook committee asked me to represent the theme of “diversity”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column sketch">
+          <div class="container">
+            <img src="art/IDK..jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">IDK.</p>
+                <p class="date">2019</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column sketch">
+          <div class="container">
+            <img src="art/loveitifwemadeit(the1975).jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Love it if we made it</p>
+                <p class="date">2019</p>
+                <p class="description">Art inspired by the band The 1975</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column sketch">
+          <div class="container">
+            <img src="art/blm.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">sample</p>
+                <p class="date">sample</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column digital">
+          <div class="container">
+            <img src="art/norasthing.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Surf au Cap</p>
+                <p class="date">25/12/2019</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column sketch">
+          <div class="container">
+            <img src="art/sketch4.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Sketch #4</p>
+                <p class="date">sample</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column sketch">
+          <div class="container">
+            <img src="art/sketch5.JPG" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Sketch #5</p>
+                <p class="date">sample</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column sketch">
+          <div class="container">
+            <img src="art/sketch6.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Sketch #6</p>
+                <p class="date">sample</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column sketch">
+          <div class="container">
+            <img src="art/sketch7.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Sketch #7</p>
+                <p class="date">sample</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column sketch">
+          <div class="container">
+            <img src="art/sketch8.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Sketch #8</p>
+                <p class="date">sample</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column sketch">
+          <div class="container">
+            <img src="art/sketch9.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <p class="title">Sketch #9</p>
+                <p class="date">2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+
+
+  </body>
+</html>

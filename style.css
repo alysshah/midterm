@@ -1,0 +1,131 @@
+* {
+  font-family: helvetica;
+  margin: 0px 0px;
+}
+
+body {
+  display: flex;
+  height: 100%;
+}
+
+/* The sidebar menu */
+.sidenav {
+  align-items: flex-start;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #282d37ff;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 30px;
+  z-index: 1;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 10px 15px 10px 30px;
+  text-decoration: none;
+  color: #f0f6f0ff;
+  display: block;
+}
+
+.pagetitle {
+  color: #858a99;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px 15px 10px 30px;
+}
+
+p.link {
+  font-size: 20px;
+}
+
+p.desc {
+  font-size: 13px;
+  color: #858a99;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f54768ff;
+}
+
+/* Style page content */
+.main {
+  margin-left: 250px; /* Same as the width of the sidebar */
+  padding: 30px 30px;
+  background-color: #1d2029ff;
+  color: #f0f6f0ff;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+.aboutme {
+  display: flex;
+  align-items: center;
+}
+
+img.pic {
+  width: 275px;
+  padding: 30px;
+  border-radius: 50%;
+}
+
+.rightcontainer {
+  padding: 0px 80px 0px 50px;
+}
+
+p.bio {
+  padding-top: 5px;
+  color: #858a99;
+}
+
+a.bio {
+  padding: 10px 30px 10px 30px;
+  margin: 10px;
+  text-decoration: none;
+  color: #f0f6f0ff;
+  background-color: #2e343fff;
+}
+
+a.bio:hover {
+  background-color: #f54768ff;
+  color: #1d2029ff;
+}
+
+.buttons {
+}
+
+.main_home {
+  padding: 0px 0px;
+  margin-left: 250px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* .homeslides {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+
+/* .content {
+  background-color: #1d2029ff;
+  color: #f0f6f0ff;
+  width: 250px;
+  height: 100%;
+  align-items: flex-start;
+} */
